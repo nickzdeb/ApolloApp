@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		015262BE206C3D1500B98C08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015262BD206C3D1500B98C08 /* AppDelegate.swift */; };
-		015262C0206C3D1600B98C08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015262BF206C3D1600B98C08 /* ViewController.swift */; };
+		015262C0206C3D1600B98C08 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015262BF206C3D1600B98C08 /* FirstVC.swift */; };
 		015262C3206C3D1600B98C08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015262C1206C3D1600B98C08 /* Main.storyboard */; };
 		015262C5206C3D1600B98C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 015262C4206C3D1600B98C08 /* Assets.xcassets */; };
 		015262C8206C3D1600B98C08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 015262C6206C3D1600B98C08 /* LaunchScreen.storyboard */; };
 		015262D3206C3D1600B98C08 /* Apollo_Light_SwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015262D2206C3D1600B98C08 /* Apollo_Light_SwitchTests.swift */; };
 		015262DE206C3D1600B98C08 /* Apollo_Light_SwitchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015262DD206C3D1600B98C08 /* Apollo_Light_SwitchUITests.swift */; };
+		015262EE206C460C00B98C08 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015262ED206C460C00B98C08 /* SecondVC.swift */; };
+		015262F0206C534B00B98C08 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015262EF206C534B00B98C08 /* ThirdVC.swift */; };
+		015262F920781F8E00B98C08 /* roomsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015262F820781F8E00B98C08 /* roomsTable.swift */; };
+		015262FC2078391600B98C08 /* Apollo Light Switch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 015262FA2078391600B98C08 /* Apollo Light Switch.xcdatamodeld */; };
+		01FBEC8D2083FBD400A88FEA /* SmartWireLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FBEC8C2083FBD400A88FEA /* SmartWireLogo.jpg */; };
+		3ADB65783D9DC4DE98BA3F18 /* Pods_Apollo_Light_SwitchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCB4B7D68A0CE6581AD18BE /* Pods_Apollo_Light_SwitchUITests.framework */; };
+		4DD7AEA8D6C58AE380080C8F /* Pods_Apollo_Light_Switch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DE95A166A0258BB125B6E7 /* Pods_Apollo_Light_Switch.framework */; };
+		B8CD56D2D728A74675448B05 /* Pods_Apollo_Light_SwitchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E8C0394C65C86C23399671 /* Pods_Apollo_Light_SwitchTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,7 @@
 /* Begin PBXFileReference section */
 		015262BA206C3D1500B98C08 /* Apollo Light Switch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apollo Light Switch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		015262BD206C3D1500B98C08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		015262BF206C3D1600B98C08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		015262BF206C3D1600B98C08 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		015262C2206C3D1600B98C08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		015262C4206C3D1600B98C08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		015262C7206C3D1600B98C08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +55,21 @@
 		015262D9206C3D1600B98C08 /* Apollo Light SwitchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apollo Light SwitchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		015262DD206C3D1600B98C08 /* Apollo_Light_SwitchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apollo_Light_SwitchUITests.swift; sourceTree = "<group>"; };
 		015262DF206C3D1600B98C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		015262ED206C460C00B98C08 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		015262EF206C534B00B98C08 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
+		015262F720781E2B00B98C08 /* Apollo Light Switch-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Apollo Light Switch-Bridging-Header.h"; sourceTree = "<group>"; };
+		015262F820781F8E00B98C08 /* roomsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomsTable.swift; sourceTree = "<group>"; };
+		015262FB2078391600B98C08 /* Apollo Light Switch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Apollo Light Switch.xcdatamodel"; sourceTree = "<group>"; };
+		01FBEC8C2083FBD400A88FEA /* SmartWireLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SmartWireLogo.jpg; sourceTree = "<group>"; };
+		3716A4A3FC816C4AF5B06EF1 /* Pods-Apollo Light SwitchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo Light SwitchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo Light SwitchUITests/Pods-Apollo Light SwitchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		39DE95A166A0258BB125B6E7 /* Pods_Apollo_Light_Switch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apollo_Light_Switch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CAE87C18E51DFCDF6BBF44B /* Pods-Apollo Light SwitchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo Light SwitchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo Light SwitchTests/Pods-Apollo Light SwitchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7811B52A54B30F278E7B16D2 /* Pods-Apollo Light Switch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo Light Switch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo Light Switch/Pods-Apollo Light Switch.debug.xcconfig"; sourceTree = "<group>"; };
+		8D622EB8CCDF8F62B2F2C045 /* Pods-Apollo Light Switch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo Light Switch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo Light Switch/Pods-Apollo Light Switch.release.xcconfig"; sourceTree = "<group>"; };
+		95B195EC034555BA7983DB9B /* Pods-Apollo Light SwitchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo Light SwitchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo Light SwitchUITests/Pods-Apollo Light SwitchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AD5EA1EA3004BBB5492B74AC /* Pods-Apollo Light SwitchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo Light SwitchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo Light SwitchTests/Pods-Apollo Light SwitchTests.release.xcconfig"; sourceTree = "<group>"; };
+		D4E8C0394C65C86C23399671 /* Pods_Apollo_Light_SwitchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apollo_Light_SwitchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFCB4B7D68A0CE6581AD18BE /* Pods_Apollo_Light_SwitchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apollo_Light_SwitchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DD7AEA8D6C58AE380080C8F /* Pods_Apollo_Light_Switch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8CD56D2D728A74675448B05 /* Pods_Apollo_Light_SwitchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ADB65783D9DC4DE98BA3F18 /* Pods_Apollo_Light_SwitchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +107,8 @@
 				015262D1206C3D1600B98C08 /* Apollo Light SwitchTests */,
 				015262DC206C3D1600B98C08 /* Apollo Light SwitchUITests */,
 				015262BB206C3D1500B98C08 /* Products */,
+				5EDC61DEAEE54CA50BFD2ADF /* Pods */,
+				1AD6B656E18BD47EF901F9B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +126,17 @@
 			isa = PBXGroup;
 			children = (
 				015262BD206C3D1500B98C08 /* AppDelegate.swift */,
-				015262BF206C3D1600B98C08 /* ViewController.swift */,
+				015262BF206C3D1600B98C08 /* FirstVC.swift */,
+				01FBEC8C2083FBD400A88FEA /* SmartWireLogo.jpg */,
 				015262C1206C3D1600B98C08 /* Main.storyboard */,
 				015262C4206C3D1600B98C08 /* Assets.xcassets */,
 				015262C6206C3D1600B98C08 /* LaunchScreen.storyboard */,
 				015262C9206C3D1600B98C08 /* Info.plist */,
+				015262ED206C460C00B98C08 /* SecondVC.swift */,
+				015262EF206C534B00B98C08 /* ThirdVC.swift */,
+				015262F720781E2B00B98C08 /* Apollo Light Switch-Bridging-Header.h */,
+				015262F820781F8E00B98C08 /* roomsTable.swift */,
+				015262FA2078391600B98C08 /* Apollo Light Switch.xcdatamodeld */,
 			);
 			path = "Apollo Light Switch";
 			sourceTree = "<group>";
@@ -125,6 +159,29 @@
 			path = "Apollo Light SwitchUITests";
 			sourceTree = "<group>";
 		};
+		1AD6B656E18BD47EF901F9B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39DE95A166A0258BB125B6E7 /* Pods_Apollo_Light_Switch.framework */,
+				D4E8C0394C65C86C23399671 /* Pods_Apollo_Light_SwitchTests.framework */,
+				EFCB4B7D68A0CE6581AD18BE /* Pods_Apollo_Light_SwitchUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EDC61DEAEE54CA50BFD2ADF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7811B52A54B30F278E7B16D2 /* Pods-Apollo Light Switch.debug.xcconfig */,
+				8D622EB8CCDF8F62B2F2C045 /* Pods-Apollo Light Switch.release.xcconfig */,
+				5CAE87C18E51DFCDF6BBF44B /* Pods-Apollo Light SwitchTests.debug.xcconfig */,
+				AD5EA1EA3004BBB5492B74AC /* Pods-Apollo Light SwitchTests.release.xcconfig */,
+				95B195EC034555BA7983DB9B /* Pods-Apollo Light SwitchUITests.debug.xcconfig */,
+				3716A4A3FC816C4AF5B06EF1 /* Pods-Apollo Light SwitchUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 015262E2206C3D1600B98C08 /* Build configuration list for PBXNativeTarget "Apollo Light Switch" */;
 			buildPhases = (
+				3D2AA352F736C2D0964E9BFB /* [CP] Check Pods Manifest.lock */,
 				015262B6206C3D1500B98C08 /* Sources */,
 				015262B7206C3D1500B98C08 /* Frameworks */,
 				015262B8206C3D1500B98C08 /* Resources */,
+				1422CB2859EAD76A0871CE9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 015262E5206C3D1600B98C08 /* Build configuration list for PBXNativeTarget "Apollo Light SwitchTests" */;
 			buildPhases = (
+				0E53537F75FD52D166990F9E /* [CP] Check Pods Manifest.lock */,
 				015262CA206C3D1600B98C08 /* Sources */,
 				015262CB206C3D1600B98C08 /* Frameworks */,
 				015262CC206C3D1600B98C08 /* Resources */,
@@ -167,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 015262E8206C3D1600B98C08 /* Build configuration list for PBXNativeTarget "Apollo Light SwitchUITests" */;
 			buildPhases = (
+				E247A32CBED1B4FEEB056636 /* [CP] Check Pods Manifest.lock */,
 				015262D5206C3D1600B98C08 /* Sources */,
 				015262D6206C3D1600B98C08 /* Frameworks */,
 				015262D7206C3D1600B98C08 /* Resources */,
@@ -193,6 +254,7 @@
 				TargetAttributes = {
 					015262B9206C3D1500B98C08 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					015262CD206C3D1600B98C08 = {
@@ -235,6 +297,7 @@
 				015262C8206C3D1600B98C08 /* LaunchScreen.storyboard in Resources */,
 				015262C5206C3D1600B98C08 /* Assets.xcassets in Resources */,
 				015262C3206C3D1600B98C08 /* Main.storyboard in Resources */,
+				01FBEC8D2083FBD400A88FEA /* SmartWireLogo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,12 +317,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E53537F75FD52D166990F9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Apollo Light SwitchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1422CB2859EAD76A0871CE9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Apollo Light Switch/Pods-Apollo Light Switch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Apollo Light Switch/Pods-Apollo Light Switch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D2AA352F736C2D0964E9BFB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Apollo Light Switch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E247A32CBED1B4FEEB056636 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Apollo Light SwitchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		015262B6206C3D1500B98C08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				015262C0206C3D1600B98C08 /* ViewController.swift in Sources */,
+				015262FC2078391600B98C08 /* Apollo Light Switch.xcdatamodeld in Sources */,
+				015262C0206C3D1600B98C08 /* FirstVC.swift in Sources */,
+				015262F920781F8E00B98C08 /* roomsTable.swift in Sources */,
+				015262EE206C460C00B98C08 /* SecondVC.swift in Sources */,
+				015262F0206C534B00B98C08 /* ThirdVC.swift in Sources */,
 				015262BE206C3D1500B98C08 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,14 +568,19 @@
 		};
 		015262E3206C3D1600B98C08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7811B52A54B30F278E7B16D2 /* Pods-Apollo Light Switch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q7796ZE9QJ;
+				DEVELOPMENT_TEAM = 74379TRW3S;
 				INFOPLIST_FILE = "Apollo Light Switch/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SmartWire.Apollo-Light-Switch";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SmartWire.apollolightswitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Apollo Light Switch/Apollo Light Switch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,14 +588,18 @@
 		};
 		015262E4206C3D1600B98C08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D622EB8CCDF8F62B2F2C045 /* Pods-Apollo Light Switch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q7796ZE9QJ;
+				DEVELOPMENT_TEAM = 74379TRW3S;
 				INFOPLIST_FILE = "Apollo Light Switch/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.SmartWire.Apollo-Light-Switch";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SmartWire.apollolightswitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Apollo Light Switch/Apollo Light Switch-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,6 +607,7 @@
 		};
 		015262E6206C3D1600B98C08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CAE87C18E51DFCDF6BBF44B /* Pods-Apollo Light SwitchTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +625,7 @@
 		};
 		015262E7206C3D1600B98C08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD5EA1EA3004BBB5492B74AC /* Pods-Apollo Light SwitchTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +643,7 @@
 		};
 		015262E9206C3D1600B98C08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95B195EC034555BA7983DB9B /* Pods-Apollo Light SwitchUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +660,7 @@
 		};
 		015262EA206C3D1600B98C08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3716A4A3FC816C4AF5B06EF1 /* Pods-Apollo Light SwitchUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -558,6 +715,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		015262FA2078391600B98C08 /* Apollo Light Switch.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				015262FB2078391600B98C08 /* Apollo Light Switch.xcdatamodel */,
+			);
+			currentVersion = 015262FB2078391600B98C08 /* Apollo Light Switch.xcdatamodel */;
+			path = "Apollo Light Switch.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 015262B2206C3D1500B98C08 /* Project object */;
 }
