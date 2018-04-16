@@ -7,6 +7,9 @@ target 'Apollo Light Switch' do
 
   # Pods for Apollo Light Switch
   pod 'Parse'
+  
+  # Custom loading bar package
+  pod 'NVActivityIndicatorView'
 
   target 'Apollo Light SwitchTests' do
     inherit! :search_paths

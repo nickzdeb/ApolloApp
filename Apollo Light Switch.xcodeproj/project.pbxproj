@@ -19,6 +19,7 @@
 		015262F920781F8E00B98C08 /* roomsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015262F820781F8E00B98C08 /* roomsTable.swift */; };
 		015262FC2078391600B98C08 /* Apollo Light Switch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 015262FA2078391600B98C08 /* Apollo Light Switch.xcdatamodeld */; };
 		01FBEC8D2083FBD400A88FEA /* SmartWireLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FBEC8C2083FBD400A88FEA /* SmartWireLogo.jpg */; };
+		01FBEC912084594C00A88FEA /* graphIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FBEC902084591D00A88FEA /* graphIcon.jpg */; };
 		3ADB65783D9DC4DE98BA3F18 /* Pods_Apollo_Light_SwitchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCB4B7D68A0CE6581AD18BE /* Pods_Apollo_Light_SwitchUITests.framework */; };
 		4DD7AEA8D6C58AE380080C8F /* Pods_Apollo_Light_Switch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DE95A166A0258BB125B6E7 /* Pods_Apollo_Light_Switch.framework */; };
 		B8CD56D2D728A74675448B05 /* Pods_Apollo_Light_SwitchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E8C0394C65C86C23399671 /* Pods_Apollo_Light_SwitchTests.framework */; };
@@ -61,6 +62,7 @@
 		015262F820781F8E00B98C08 /* roomsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomsTable.swift; sourceTree = "<group>"; };
 		015262FB2078391600B98C08 /* Apollo Light Switch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Apollo Light Switch.xcdatamodel"; sourceTree = "<group>"; };
 		01FBEC8C2083FBD400A88FEA /* SmartWireLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SmartWireLogo.jpg; sourceTree = "<group>"; };
+		01FBEC902084591D00A88FEA /* graphIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = graphIcon.jpg; path = ../graphIcon.jpg; sourceTree = "<group>"; };
 		3716A4A3FC816C4AF5B06EF1 /* Pods-Apollo Light SwitchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo Light SwitchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo Light SwitchUITests/Pods-Apollo Light SwitchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		39DE95A166A0258BB125B6E7 /* Pods_Apollo_Light_Switch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apollo_Light_Switch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CAE87C18E51DFCDF6BBF44B /* Pods-Apollo Light SwitchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo Light SwitchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo Light SwitchTests/Pods-Apollo Light SwitchTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		015262BC206C3D1500B98C08 /* Apollo Light Switch */ = {
 			isa = PBXGroup;
 			children = (
+				01FBEC902084591D00A88FEA /* graphIcon.jpg */,
 				015262BD206C3D1500B98C08 /* AppDelegate.swift */,
 				015262BF206C3D1600B98C08 /* FirstVC.swift */,
 				01FBEC8C2083FBD400A88FEA /* SmartWireLogo.jpg */,
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				015262C8206C3D1600B98C08 /* LaunchScreen.storyboard in Resources */,
+				01FBEC912084594C00A88FEA /* graphIcon.jpg in Resources */,
 				015262C5206C3D1600B98C08 /* Assets.xcassets in Resources */,
 				015262C3206C3D1600B98C08 /* Main.storyboard in Resources */,
 				01FBEC8D2083FBD400A88FEA /* SmartWireLogo.jpg in Resources */,
@@ -344,11 +348,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Apollo Light Switch/Pods-Apollo Light Switch-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

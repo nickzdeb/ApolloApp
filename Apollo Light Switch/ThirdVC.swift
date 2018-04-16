@@ -19,6 +19,12 @@ class ThirdVC: UIViewController {
     @IBOutlet var roomActivityLabel: UILabel!
     @IBOutlet var lightLabel: UILabel!
     
+    @IBOutlet var tempGraph: UIButton!
+    @IBOutlet var humGraph: UIButton!
+    @IBOutlet var motionGraph: UIButton!
+    @IBOutlet var lightGraph: UIButton!
+    
+    
     @IBOutlet var deleteButton: UIButton!
     
     
@@ -27,7 +33,12 @@ class ThirdVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpLabel()
+        //Need to call other functions
         
+    }
+    
+    @objc func buttonPressed() {
+        print("button pressed!!")
     }
     
     override func didReceiveMemoryWarning() {
