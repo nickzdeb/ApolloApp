@@ -12,6 +12,7 @@
         <!--FirstVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="firstVC" id="BYZ-38-t0r" customClass="FirstVC" customModule="Apollo_Light_Switch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -27,8 +28,9 @@
                                     <action selector="NextPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vt1-DM-p6s"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="SmartWireLogo.jpg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aug-9i-iS5">
-                                <rect key="frame" x="0.0" y="74" width="375" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoNEW2.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aug-9i-iS5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.57975784648606821" green="0.60516706968161293" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -36,10 +38,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TXL-pD-p7o" secondAttribute="bottom" constant="611" id="9dn-1g-Z0o"/>
                             <constraint firstItem="TXL-pD-p7o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="318" id="Mq5-HD-Fn5"/>
                             <constraint firstItem="TXL-pD-p7o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Q0Z-Tg-Me4"/>
-                            <constraint firstItem="Aug-9i-iS5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="54" id="R74-OW-Yuj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TXL-pD-p7o" secondAttribute="trailing" constant="16" id="Zgy-DD-sQ6"/>
-                            <constraint firstItem="Aug-9i-iS5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bXL-eW-gjZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aug-9i-iS5" secondAttribute="trailing" id="drV-tk-QDD"/>
                             <constraint firstItem="TXL-pD-p7o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iUV-0s-BYK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -49,7 +48,6 @@
                         <outlet property="smartWireImage" destination="Aug-9i-iS5" id="PH2-lq-aCL"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="97.601199400299862"/>
         </scene>
@@ -280,7 +278,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="SmartWireLogo.jpg" width="781" height="225"/>
         <image name="graphIcon.jpg" width="47" height="42"/>
+        <image name="logoNEW2.png" width="526" height="745"/>
     </resources>
 </document>
