@@ -10,6 +10,7 @@ target 'Apollo Light Switch' do
   
   # Custom loading bar package
   pod 'NVActivityIndicatorView'
+  pod 'Charts'
 
   target 'Apollo Light SwitchTests' do
     inherit! :search_paths
