@@ -36,9 +36,19 @@ class ThirdVC: UIViewController {
         setUpLabel()
         //Need to call other functions
         
+        let query = PFQuery(className: "temp_hum")
+        query.whereKey("UUID", equalTo: "1")
         
+        query.findObjectsInBackground(block: { (objects: [PFObject]?, error: Error?) -> Void in
+            if error == nil {
+                for object in objects! {
+                    print(object["temperature"])
+                }
+            }
+        }
+        )
         
-        print("my uuid is: ", uuid)
+        //print("my uuid is: ", uuid)
         
     }
     
