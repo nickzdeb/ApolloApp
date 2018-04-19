@@ -29,11 +29,16 @@ class ThirdVC: UIViewController {
     
     
     var roomName: String?
+    var uuid: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpLabel()
         //Need to call other functions
+        
+        
+        
+        print("my uuid is: ", uuid)
         
     }
     
@@ -85,12 +90,12 @@ class ThirdVC: UIViewController {
             
             
             let query = PFQuery(className: "Room")
-            query.whereKey("columnName", equalTo: "roomName")
+            query.whereKey("UUID", equalTo: self.uuid!)
             
             query.findObjectsInBackground(block: { (objects: [PFObject]?, error: Error?) -> Void in
                 if error == nil {
                     for object in objects! {
-                        object.deleteInBackground()
+                        object.deleteEventually()
                     }
                 }
             }

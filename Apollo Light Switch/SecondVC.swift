@@ -17,7 +17,7 @@ class SecondVC: UIViewController {
     @IBOutlet var tableOfRooms: UITableView!
     
     
-    var currentRoomNames: [String] = []
+    var currentRoomNames: [RoomObject] = []
     
     
     override func viewDidLoad() {
@@ -31,8 +31,10 @@ class SecondVC: UIViewController {
             if (error == nil){
                 for object in objects! {
                     
-                    let myObject = object["roomName"] as! String
-                    self.currentRoomNames.append(myObject as String)
+                    //let myObject = object["roomName"] as! String
+                    let myObject = RoomObject(roomName: object["roomName"] as! String, uuid: object["UUID"] as! String)
+                    self.currentRoomNames.append(myObject)
+                    //print(self.currentRoomNames)
                     
                     //Loads the TableView with currentRoomNames when secondVC is initiated
                     self.tableOfRooms.beginUpdates()
@@ -81,10 +83,12 @@ class SecondVC: UIViewController {
                     let roomName = roomNameTextField.text!
                     let uuid = uuidTextField.text!
                     
+                    let myObject = RoomObject(roomName: roomName, uuid: uuid)
+                    
                     //Reloads the TableView after user enters new room
                     self.tableOfRooms.reloadData()
                     self.tableOfRooms.beginUpdates()
-                    self.currentRoomNames.append(roomName)
+                    self.currentRoomNames.append(myObject)
                     self.tableOfRooms.insertRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
                     self.tableOfRooms.endUpdates()
                     

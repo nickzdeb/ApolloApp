@@ -22,7 +22,8 @@ extension SecondVC: UITableViewDelegate, UITableViewDataSource, NSFetchedResults
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseCell") as! UITableViewCell
         
-        cell.textLabel?.text = currentRoomNames[indexPath.row]
+        cell.textLabel?.text = currentRoomNames[indexPath.row].roomName
+        
         
         return cell
     }
@@ -40,6 +41,7 @@ extension SecondVC: UITableViewDelegate, UITableViewDataSource, NSFetchedResults
         let destinationVC = storyboard.instantiateViewController(withIdentifier: "ThirdVC") as! ThirdVC
         
         destinationVC.roomName = roomName
+        destinationVC.uuid = currentRoomNames[indexPath.row].uuid
         
         self.present(destinationVC, animated: true, completion: nil)
     }

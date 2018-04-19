@@ -21,6 +21,7 @@
 		01FBEC912084594C00A88FEA /* graphIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FBEC902084591D00A88FEA /* graphIcon.jpg */; };
 		01FBEC932086399500A88FEA /* logoNEW.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FBEC922086399400A88FEA /* logoNEW.png */; };
 		01FBEC9520863CD500A88FEA /* logoNEW2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FBEC9420863CD400A88FEA /* logoNEW2.png */; };
+		01FBEC972086A22400A88FEA /* RoomObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBEC962086A22400A88FEA /* RoomObject.swift */; };
 		3ADB65783D9DC4DE98BA3F18 /* Pods_Apollo_Light_SwitchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCB4B7D68A0CE6581AD18BE /* Pods_Apollo_Light_SwitchUITests.framework */; };
 		4DD7AEA8D6C58AE380080C8F /* Pods_Apollo_Light_Switch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DE95A166A0258BB125B6E7 /* Pods_Apollo_Light_Switch.framework */; };
 		B8CD56D2D728A74675448B05 /* Pods_Apollo_Light_SwitchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E8C0394C65C86C23399671 /* Pods_Apollo_Light_SwitchTests.framework */; };
@@ -65,6 +66,7 @@
 		01FBEC902084591D00A88FEA /* graphIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = graphIcon.jpg; path = ../graphIcon.jpg; sourceTree = "<group>"; };
 		01FBEC922086399400A88FEA /* logoNEW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoNEW.png; sourceTree = "<group>"; };
 		01FBEC9420863CD400A88FEA /* logoNEW2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoNEW2.png; sourceTree = "<group>"; };
+		01FBEC962086A22400A88FEA /* RoomObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomObject.swift; sourceTree = "<group>"; };
 		3716A4A3FC816C4AF5B06EF1 /* Pods-Apollo Light SwitchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo Light SwitchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo Light SwitchUITests/Pods-Apollo Light SwitchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		39DE95A166A0258BB125B6E7 /* Pods_Apollo_Light_Switch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apollo_Light_Switch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CAE87C18E51DFCDF6BBF44B /* Pods-Apollo Light SwitchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo Light SwitchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo Light SwitchTests/Pods-Apollo Light SwitchTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				015262F720781E2B00B98C08 /* Apollo Light Switch-Bridging-Header.h */,
 				015262F820781F8E00B98C08 /* roomsTable.swift */,
 				015262FA2078391600B98C08 /* Apollo Light Switch.xcdatamodeld */,
+				01FBEC962086A22400A88FEA /* RoomObject.swift */,
 			);
 			path = "Apollo Light Switch";
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				015262C0206C3D1600B98C08 /* FirstVC.swift in Sources */,
 				015262F920781F8E00B98C08 /* roomsTable.swift in Sources */,
 				015262EE206C460C00B98C08 /* SecondVC.swift in Sources */,
+				01FBEC972086A22400A88FEA /* RoomObject.swift in Sources */,
 				015262F0206C534B00B98C08 /* ThirdVC.swift in Sources */,
 				015262BE206C3D1500B98C08 /* AppDelegate.swift in Sources */,
 			);
