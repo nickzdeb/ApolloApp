@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FdA-Gq-qLE">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXL-pD-p7o">
-                                <rect key="frame" x="318" y="20" width="41" height="36"/>
+                                <rect key="frame" x="318" y="64" width="41" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.98786616341529954" green="1" blue="0.68262984525931936" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -30,8 +30,19 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logoNEW2.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aug-9i-iS5">
                                 <rect key="frame" x="0.0" y="116" width="375" height="570"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jE-OB-S59">
+                                <rect key="frame" x="16" y="64" width="151" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Installation Guide">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="To_Installation_Guide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bLQ-bN-6KY"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.57975784648606821" green="0.60516706968161293" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Aug-9i-iS5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="4do-Tc-IZf"/>
                             <constraint firstItem="Aug-9i-iS5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6Ne-lb-W3y"/>
@@ -45,6 +56,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="BGO-zI-R26"/>
                     <connections>
                         <outlet property="nextButtonPush" destination="TXL-pD-p7o" id="qhk-Nd-hxY"/>
                         <outlet property="smartWireImage" destination="Aug-9i-iS5" id="PH2-lq-aCL"/>
@@ -52,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="97.601199400299862"/>
+            <point key="canvasLocation" x="964" y="97.601199400299862"/>
         </scene>
         <!--SecondVC-->
         <scene sceneID="fpZ-76-6UI">
@@ -102,6 +114,17 @@
                                     <action selector="AddNewRoomButton:" destination="bOT-fn-8YP" eventType="touchUpInside" id="zKz-Qf-QeP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9P-sN-KCj">
+                                <rect key="frame" x="203" y="221" width="156" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Installation Guide">
+                                    <color key="titleColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="To_Installation_Guide:" destination="bOT-fn-8YP" eventType="touchUpInside" id="gcf-v1-1TV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.58808771030320917" green="0.60724353631562744" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -131,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fxe-fX-1yf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956" y="97.601199400299862"/>
+            <point key="canvasLocation" x="1895.2" y="97.601199400299862"/>
         </scene>
         <!--ThirdVC-->
         <scene sceneID="UFD-kS-mF9">
@@ -277,7 +300,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nLc-8p-PnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1821.5999999999999" y="98.50074962518741"/>
+            <point key="canvasLocation" x="2760.8000000000002" y="98.50074962518741"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ssl-37-bZm">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FdA-Gq-qLE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jsd-Bn-Pl5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tgo-bL-NC1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ay5-Bf-eoq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="97.601199400299862"/>
         </scene>
     </scenes>
     <resources>

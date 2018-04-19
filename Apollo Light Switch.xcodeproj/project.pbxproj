@@ -24,6 +24,7 @@
 		01FBEC972086A22400A88FEA /* RoomObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBEC962086A22400A88FEA /* RoomObject.swift */; };
 		3ADB65783D9DC4DE98BA3F18 /* Pods_Apollo_Light_SwitchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFCB4B7D68A0CE6581AD18BE /* Pods_Apollo_Light_SwitchUITests.framework */; };
 		4DD7AEA8D6C58AE380080C8F /* Pods_Apollo_Light_Switch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DE95A166A0258BB125B6E7 /* Pods_Apollo_Light_Switch.framework */; };
+		9C94EDF42088E7D300899A0C /* Installation Guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9C94EDF32088E7D300899A0C /* Installation Guide.pdf */; };
 		B8CD56D2D728A74675448B05 /* Pods_Apollo_Light_SwitchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E8C0394C65C86C23399671 /* Pods_Apollo_Light_SwitchTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		7811B52A54B30F278E7B16D2 /* Pods-Apollo Light Switch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo Light Switch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo Light Switch/Pods-Apollo Light Switch.debug.xcconfig"; sourceTree = "<group>"; };
 		8D622EB8CCDF8F62B2F2C045 /* Pods-Apollo Light Switch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo Light Switch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo Light Switch/Pods-Apollo Light Switch.release.xcconfig"; sourceTree = "<group>"; };
 		95B195EC034555BA7983DB9B /* Pods-Apollo Light SwitchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo Light SwitchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo Light SwitchUITests/Pods-Apollo Light SwitchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9C94EDF32088E7D300899A0C /* Installation Guide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Installation Guide.pdf"; sourceTree = "<group>"; };
 		AD5EA1EA3004BBB5492B74AC /* Pods-Apollo Light SwitchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Apollo Light SwitchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Apollo Light SwitchTests/Pods-Apollo Light SwitchTests.release.xcconfig"; sourceTree = "<group>"; };
 		D4E8C0394C65C86C23399671 /* Pods_Apollo_Light_SwitchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apollo_Light_SwitchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFCB4B7D68A0CE6581AD18BE /* Pods_Apollo_Light_SwitchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Apollo_Light_SwitchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +111,7 @@
 		015262B1206C3D1500B98C08 = {
 			isa = PBXGroup;
 			children = (
+				9C94EDF22088E79E00899A0C /* Installation Guide */,
 				015262BC206C3D1500B98C08 /* Apollo Light Switch */,
 				015262D1206C3D1600B98C08 /* Apollo Light SwitchTests */,
 				015262DC206C3D1600B98C08 /* Apollo Light SwitchUITests */,
@@ -189,6 +192,14 @@
 				3716A4A3FC816C4AF5B06EF1 /* Pods-Apollo Light SwitchUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C94EDF22088E79E00899A0C /* Installation Guide */ = {
+			isa = PBXGroup;
+			children = (
+				9C94EDF32088E7D300899A0C /* Installation Guide.pdf */,
+			);
+			path = "Installation Guide";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				015262C8206C3D1600B98C08 /* LaunchScreen.storyboard in Resources */,
+				9C94EDF42088E7D300899A0C /* Installation Guide.pdf in Resources */,
 				01FBEC932086399500A88FEA /* logoNEW.png in Resources */,
 				01FBEC912084594C00A88FEA /* graphIcon.jpg in Resources */,
 				015262C5206C3D1600B98C08 /* Assets.xcassets in Resources */,
@@ -587,7 +599,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 74379TRW3S;
+				DEVELOPMENT_TEAM = 8M67395SRF;
 				INFOPLIST_FILE = "Apollo Light Switch/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -607,7 +619,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 74379TRW3S;
+				DEVELOPMENT_TEAM = 8M67395SRF;
 				INFOPLIST_FILE = "Apollo Light Switch/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -15,6 +15,21 @@ class FirstVC: UIViewController {
     @IBOutlet var smartWireImage: UIImageView!
     
     
+    let pdf = "Installation Guide"
+    @IBAction func To_Installation_Guide(_ sender: Any) {
+        // performSegue(withIdentifier: "segue_to_installation", sender: self)
+        if let url = Bundle.main.url(forResource: pdf, withExtension: "pdf") {
+            let webView = UIWebView(frame: self.view.frame)
+            let urlRequest = URLRequest(url: url)
+            webView.loadRequest(urlRequest as URLRequest)
+            //self.view.addSubview(webView)
+            let pdfVC = UIViewController()
+            pdfVC.view.addSubview(webView)
+            pdfVC.title = pdf
+            self.navigationController?.pushViewController(pdfVC, animated: true)
+        }
+    }
+    
     
     override func viewDidLoad() {
         
