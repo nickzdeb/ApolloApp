@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7D4BBB6328E4E25FEADFD1B14CEC6697"
+               BlueprintIdentifier = "2FCCF61D42BB61398562335B07DA9E04"
                BuildableName = "Pods_Apollo_Light_Switch.framework"
                BlueprintName = "Pods-Apollo Light Switch"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "7D4BBB6328E4E25FEADFD1B14CEC6697"
+            BlueprintIdentifier = "2FCCF61D42BB61398562335B07DA9E04"
             BuildableName = "Pods_Apollo_Light_Switch.framework"
             BlueprintName = "Pods-Apollo Light Switch"
             ReferencedContainer = "container:Pods.xcodeproj">
