@@ -24,6 +24,8 @@ class ThirdVC: UIViewController {
     @IBOutlet var motionGraph: UIButton!
     @IBOutlet var lightGraph: UIButton!
     
+    @IBOutlet var leftSwitch: UISwitch!
+    @IBOutlet var rightSwitch: UISwitch!
     
     @IBOutlet var deleteButton: UIButton!
     
@@ -242,4 +244,79 @@ class ThirdVC: UIViewController {
         
         self.present(destinationVC, animated: true, completion: nil)
     }
+    
+    
+    @IBAction func leftSwitchPushed(_ sender: UISwitch) {
+        if leftSwitch.isOn {
+            print("Left Switch is on")
+            
+            let light_signal = PFObject(className:"light_control")
+            light_signal["signal"] = leftSwitch.isOn//state of light switch
+            light_signal["UUID"] = uuid
+            light_signal["light_num"] = 1
+            light_signal.saveInBackground {
+                (success: Bool, error: Error?) in
+                if (success) {
+                    print("The light signal has been saved.")
+                } else {
+                    print("There was a problem, check error.description")
+                }
+            }
+            
+        } else {
+            print("Left Switch is off")
+            
+            let light_signal = PFObject(className:"light_control")
+            light_signal["signal"] = leftSwitch.isOn//state of light switch
+            light_signal["UUID"] = uuid
+            light_signal["light_num"] = 1
+            light_signal.saveInBackground {
+                (success: Bool, error: Error?) in
+                if (success) {
+                    print("The light signal has been saved.")
+                } else {
+                    print("There was a problem, check error.description")
+                }
+            }
+        }
+    }
+    
+    @IBAction func rightSwitchPushed(_ sender: UISwitch) {
+        if rightSwitch.isOn {
+            print("Right Switch is on")
+            
+            let light_signal = PFObject(className:"light_control")
+            light_signal["signal"] = rightSwitch.isOn//state of light switch
+            light_signal["UUID"] = uuid
+            light_signal["light_num"] = 2
+            light_signal.saveInBackground {
+                (success: Bool, error: Error?) in
+                if (success) {
+                    print("The light signal has been saved.")
+                } else {
+                    print("There was a problem, check error.description")
+                }
+            }
+            
+        } else {
+            print("Right Switch is off")
+            
+            let light_signal = PFObject(className:"light_control")
+            light_signal["signal"] = rightSwitch.isOn//state of light switch
+            light_signal["UUID"] = uuid
+            light_signal["light_num"] = 2
+            light_signal.saveInBackground {
+                (success: Bool, error: Error?) in
+                if (success) {
+                    print("The light signal has been saved.")
+                } else {
+                    print("There was a problem, check error.description")
+                }
+            }
+            
+        }
+    }
 }
+    
+    
+
