@@ -100,7 +100,6 @@ class ThirdVC: UIViewController {
                     lightObject.uuid = object["uuid"] as! String
                     lightObject.lighting = object["lighting"] as! Int
                     lightObject.entry_num = object["entry_num"] as! Int
-                    lightObject.day = object["day"] as! Int
                     lightObject.time = object["time"] as! String
                     self.light_array.append(lightObject)
                 }
@@ -203,6 +202,11 @@ class ThirdVC: UIViewController {
     
     
     @IBAction func tempPicturePushed(_ sender: Any) {
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//
+//        let FourthVC = storyboard.instantiateViewController(withIdentifier: "FourthVCViewController") as! FourthVCViewController
+//        present(FourthVC, animated: true, completion: nil)
+        
         self.goToGraphVC(dataSet: .temp)
     }
     
@@ -250,7 +254,7 @@ class ThirdVC: UIViewController {
         if leftSwitch.isOn {
             print("Left Switch is on")
             
-            let light_signal = PFObject(className:"light_control")
+            let light_signal = PFObject(className:"light_control_1")
             light_signal["signal"] = leftSwitch.isOn//state of light switch
             light_signal["UUID"] = uuid
             light_signal["light_num"] = 1
@@ -266,7 +270,7 @@ class ThirdVC: UIViewController {
         } else {
             print("Left Switch is off")
             
-            let light_signal = PFObject(className:"light_control")
+            let light_signal = PFObject(className:"light_control_1")
             light_signal["signal"] = leftSwitch.isOn//state of light switch
             light_signal["UUID"] = uuid
             light_signal["light_num"] = 1
@@ -285,7 +289,7 @@ class ThirdVC: UIViewController {
         if rightSwitch.isOn {
             print("Right Switch is on")
             
-            let light_signal = PFObject(className:"light_control")
+            let light_signal = PFObject(className:"light_control_2")
             light_signal["signal"] = rightSwitch.isOn//state of light switch
             light_signal["UUID"] = uuid
             light_signal["light_num"] = 2
@@ -301,7 +305,7 @@ class ThirdVC: UIViewController {
         } else {
             print("Right Switch is off")
             
-            let light_signal = PFObject(className:"light_control")
+            let light_signal = PFObject(className:"light_control_2")
             light_signal["signal"] = rightSwitch.isOn//state of light switch
             light_signal["UUID"] = uuid
             light_signal["light_num"] = 2

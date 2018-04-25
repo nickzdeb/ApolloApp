@@ -148,8 +148,6 @@
         <!--ThirdVC-->
         <scene sceneID="UFD-kS-mF9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nLc-8p-PnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="She-LN-pXB"/>
                 <viewController storyboardIdentifier="ThirdVC" title="ThirdVC" id="bhq-6Q-j0c" customClass="ThirdVC" customModule="Apollo_Light_Switch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dpP-pA-BOF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -323,8 +321,35 @@
                         <outlet property="tempLabel" destination="lOa-YE-eoI" id="c2Q-Yl-DZV"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nLc-8p-PnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="She-LN-pXB"/>
             </objects>
             <point key="canvasLocation" x="2760.8000000000002" y="98.50074962518741"/>
+        </scene>
+        <!--GraphVC-->
+        <scene sceneID="8vK-SA-Och">
+            <objects>
+                <viewController storyboardIdentifier="GraphVC" title="GraphVC" id="y2V-jn-FyD" customClass="GraphVC" customModule="Apollo_Light_Switch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ovw-MS-bKK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IdJ-xC-Vm1">
+                                <rect key="frame" x="67" y="229" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="jKg-Pi-V6e"/>
+                    </view>
+                    <connections>
+                        <outlet property="graphView" destination="IdJ-xC-Vm1" id="Jz0-30-XSP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C6w-ao-qWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3592.8000000000002" y="95.802098950524751"/>
         </scene>
     </scenes>
     <resources>

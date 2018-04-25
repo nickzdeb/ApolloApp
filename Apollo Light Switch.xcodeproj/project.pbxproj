@@ -18,6 +18,7 @@
 		015262F0206C534B00B98C08 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015262EF206C534B00B98C08 /* ThirdVC.swift */; };
 		015262F920781F8E00B98C08 /* roomsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015262F820781F8E00B98C08 /* roomsTable.swift */; };
 		015262FC2078391600B98C08 /* Apollo Light Switch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 015262FA2078391600B98C08 /* Apollo Light Switch.xcdatamodeld */; };
+		0155C96A20900199006CE6E0 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0155C96920900199006CE6E0 /* GraphView.swift */; };
 		01FBEC912084594C00A88FEA /* graphIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FBEC902084591D00A88FEA /* graphIcon.jpg */; };
 		01FBEC932086399500A88FEA /* logoNEW.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FBEC922086399400A88FEA /* logoNEW.png */; };
 		01FBEC9520863CD500A88FEA /* logoNEW2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FBEC9420863CD400A88FEA /* logoNEW2.png */; };
@@ -68,6 +69,7 @@
 		015262F720781E2B00B98C08 /* Apollo Light Switch-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Apollo Light Switch-Bridging-Header.h"; sourceTree = "<group>"; };
 		015262F820781F8E00B98C08 /* roomsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomsTable.swift; sourceTree = "<group>"; };
 		015262FB2078391600B98C08 /* Apollo Light Switch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Apollo Light Switch.xcdatamodel"; sourceTree = "<group>"; };
+		0155C96920900199006CE6E0 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		01FBEC902084591D00A88FEA /* graphIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = graphIcon.jpg; sourceTree = "<group>"; };
 		01FBEC922086399400A88FEA /* logoNEW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoNEW.png; sourceTree = "<group>"; };
 		01FBEC9420863CD400A88FEA /* logoNEW2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoNEW2.png; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				EAF70F082089486D00D431DD /* SecondVC */,
 				015262EF206C534B00B98C08 /* ThirdVC.swift */,
 				EAF70F042089484600D431DD /* GraphVC.swift */,
+				0155C96920900199006CE6E0 /* GraphView.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				015262FC2078391600B98C08 /* Apollo Light Switch.xcdatamodeld in Sources */,
 				EAF70F0120893EEE00D431DD /* MotionObject.swift in Sources */,
 				015262C0206C3D1600B98C08 /* FirstVC.swift in Sources */,
+				0155C96A20900199006CE6E0 /* GraphView.swift in Sources */,
 				015262F920781F8E00B98C08 /* roomsTable.swift in Sources */,
 				015262EE206C460C00B98C08 /* SecondVC.swift in Sources */,
 				01FBEC972086A22400A88FEA /* RoomObject.swift in Sources */,

@@ -8,6 +8,7 @@
 
 import UIKit
 import Charts
+import CoreGraphics
 
 protocol GetChartData {
     func getChartData(with dataPoints: [String], values: [Int])
@@ -20,15 +21,13 @@ class GraphVC: UIViewController, GetChartData {
         
     }
     
+    @IBOutlet var graphView: UIView!
     
     var sensorDuration = [Date]()
     var sensorDuration2 = [String]()
     var dataSet = [Double]()
     var dataSet2 = [Int]()
     
-
-    /** Active Components */
-    var ChartsView = LineChartView()
     
 
     /** Active Data sets */
@@ -48,48 +47,20 @@ class GraphVC: UIViewController, GetChartData {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        constructChartsView()
-        populateChartData()
-        //lineChart()
+        setChartValues()
     }
     
-    func populateChartData() {
+    func setChartValues() {
+        var myData = [[String:Int]]()
         
         for object in lightArray {
             sensorDuration2.append(object.time)
             dataSet2.append(object.lighting)
+            myData.append([object.time:object.lighting])
         }
         
-        self.getChartData(with: sensorDuration2, values: dataSet2)
-        //print(dataSet2)
-         //print(sensorDuration2)
-        //print(lightArray)
-        //print("this called")
-        //timeOfDay =
-        //sensorData =
+        let graph = GraphView(frame: CGRect(x: 50, y: 50, width: 420, height: 200), data: myData)
+        self.view.addSubview(graph)
     }
     
-//    func lineChart() {
-//        let lineChart = lineChart(frame: CGRect(x: 0.0, y: 0.0, width: self.view.frame.width, height: self.view.frame.height))
-//        lineChart.delegate = self
-//        self.view.addSubview(lineChart)
-//    }
-    
-}
-
-
-extension GraphVC {
-    
-    func constructChartsView() {
-        layoutChartsView()
-    }
-    
-    
-    func layoutChartsView() {
-        ChartsView.frame = CGRect(x: 0,
-                                  y: 100,
-                                  width: self.view.frame.width,
-                                  height: self.view.frame.height)
-        self.view.addSubview(ChartsView)
-    }
 }

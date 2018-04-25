@@ -13,6 +13,5 @@ class LightObject: NSObject {
     var uuid = ""
     var lighting = 0
     var entry_num = 0
-    var day = 0
     var time = ""
 }
