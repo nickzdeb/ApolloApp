@@ -127,13 +127,13 @@ class ThirdVC: UIViewController {
     
     func setUpTemp() {
         if let lastEntryTemp = self.temp_hum_array.last {
-            tempLabel.text = "\(lastEntryTemp.temperature)"
+            tempLabel.text = "\(lastEntryTemp.temperature)°C"
         }
     }
     
     func setUpHum() {
         if let lastEntryTemp = self.temp_hum_array.last {
-            humLabel.text = "\(lastEntryTemp.humidity)"
+            humLabel.text = "\(lastEntryTemp.humidity)%"
         }
     }
     
@@ -152,9 +152,9 @@ class ThirdVC: UIViewController {
             if (lastEntryTemp.lighting < 50){
                 lightLabel.text = "Dark"
             } else if (lastEntryTemp.lighting > 50 && lastEntryTemp.lighting < 200) {
-                lightLabel.text = "Average Lighgting"
+                lightLabel.text = "Average"
             } else {
-                lightLabel.text = "BRIGHT"
+                lightLabel.text = "Bright"
             }
             
             lightLabel.sizeToFit()

@@ -47,20 +47,48 @@ class GraphVC: UIViewController, GetChartData {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
         setChartValues()
     }
     
     func setChartValues() {
         var myData = [[String:Int]]()
+        print(dataChoiceSet)
         
-        for object in lightArray {
-            sensorDuration2.append(object.time)
-            dataSet2.append(object.lighting)
-            myData.append([object.time:object.lighting])
+        if dataChoiceSet == .light {
+            for object in lightArray {
+                sensorDuration2.append(object.time)
+                dataSet2.append(object.lighting)
+                myData.append([object.time:object.lighting])
+            }
         }
         
-        let graph = GraphView(frame: CGRect(x: 50, y: 50, width: 420, height: 200), data: myData)
+        else if dataChoiceSet == .temp {
+            for object in tempArray {
+                myData.append([object.time:Int(object.temperature)])
+            }
+        }
+
+        else if dataChoiceSet == .hum {
+            for object in humArray {
+                myData.append([object.time:Int(object.humidity)])
+            }
+        }
+
+        else if dataChoiceSet == .motion {
+            for object in motionArray {
+                if object.motion {
+                    myData.append([object.time:1])
+                }
+                else {
+                    myData.append([object.time:0])
+                }
+            }
+        }
+        
+        let graph = GraphView(frame: CGRect(x: 0, y: 100, width: 420, height: 200), data: myData)
         self.view.addSubview(graph)
     }
     
 }
+

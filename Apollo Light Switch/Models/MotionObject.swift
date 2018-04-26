@@ -13,4 +13,5 @@ class MotionObject: NSObject {
     var motion: Bool = false
     var uuid: String = ""
     var entry_num: Int = 0
+    var time: String = ""
 }

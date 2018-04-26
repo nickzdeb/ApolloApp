@@ -15,28 +15,30 @@ class FirstVC: UIViewController {
     @IBOutlet var smartWireImage: UIImageView!
     
     
-    let pdf = "Installation Guide"
-    @IBAction func To_Installation_Guide(_ sender: Any) {
-        if let url = Bundle.main.url(forResource: pdf, withExtension: "pdf") {
-            let webView = UIWebView(frame: self.view.frame)
-            let urlRequest = URLRequest(url: url)
-            webView.loadRequest(urlRequest as URLRequest)
-            let pdfVC = UIViewController()
-            pdfVC.view.addSubview(webView)
-            pdfVC.title = pdf
-            present(pdfVC, animated: true, completion: nil)
-        }
-    }
-    
-    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
         
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "logoNEW3.png")!)
+        assignbackground()
     }
 
+    
+    func assignbackground(){
+        let background = UIImage(named: "logoNEW3")
+        
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIViewContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        view.addSubview(imageView)
+        self.view.sendSubview(toBack: imageView)
+    }
+    
     @IBAction func NextPushed(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         

@@ -14,4 +14,5 @@ class Temp_Hum: NSObject {
     var uuid: String = ""
     var temperature: Double = 0.0
     var humidity: Double = 0.0
+    var time: String = ""
 }

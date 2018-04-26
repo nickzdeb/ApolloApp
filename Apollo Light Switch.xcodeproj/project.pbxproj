@@ -19,6 +19,7 @@
 		015262F920781F8E00B98C08 /* roomsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015262F820781F8E00B98C08 /* roomsTable.swift */; };
 		015262FC2078391600B98C08 /* Apollo Light Switch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 015262FA2078391600B98C08 /* Apollo Light Switch.xcdatamodeld */; };
 		0155C96A20900199006CE6E0 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0155C96920900199006CE6E0 /* GraphView.swift */; };
+		01E118202091A8BA003269DE /* logoNEW3.png in Resources */ = {isa = PBXBuildFile; fileRef = 01E1181F2091A8BA003269DE /* logoNEW3.png */; };
 		01FBEC912084594C00A88FEA /* graphIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01FBEC902084591D00A88FEA /* graphIcon.jpg */; };
 		01FBEC932086399500A88FEA /* logoNEW.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FBEC922086399400A88FEA /* logoNEW.png */; };
 		01FBEC9520863CD500A88FEA /* logoNEW2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FBEC9420863CD400A88FEA /* logoNEW2.png */; };
@@ -70,6 +71,7 @@
 		015262F820781F8E00B98C08 /* roomsTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roomsTable.swift; sourceTree = "<group>"; };
 		015262FB2078391600B98C08 /* Apollo Light Switch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Apollo Light Switch.xcdatamodel"; sourceTree = "<group>"; };
 		0155C96920900199006CE6E0 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		01E1181F2091A8BA003269DE /* logoNEW3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logoNEW3.png; path = ../../../../../Desktop/logoNEW3.png; sourceTree = "<group>"; };
 		01FBEC902084591D00A88FEA /* graphIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = graphIcon.jpg; sourceTree = "<group>"; };
 		01FBEC922086399400A88FEA /* logoNEW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoNEW.png; sourceTree = "<group>"; };
 		01FBEC9420863CD400A88FEA /* logoNEW2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoNEW2.png; sourceTree = "<group>"; };
@@ -238,6 +240,7 @@
 		EAF70F092089487700D431DD /* App */ = {
 			isa = PBXGroup;
 			children = (
+				01E1181F2091A8BA003269DE /* logoNEW3.png */,
 				015262FA2078391600B98C08 /* Apollo Light Switch.xcdatamodeld */,
 				01FBEC902084591D00A88FEA /* graphIcon.jpg */,
 				015262BD206C3D1500B98C08 /* AppDelegate.swift */,
@@ -374,6 +377,7 @@
 				01FBEC932086399500A88FEA /* logoNEW.png in Resources */,
 				01FBEC912084594C00A88FEA /* graphIcon.jpg in Resources */,
 				015262C5206C3D1600B98C08 /* Assets.xcassets in Resources */,
+				01E118202091A8BA003269DE /* logoNEW3.png in Resources */,
 				01FBEC9520863CD500A88FEA /* logoNEW2.png in Resources */,
 				015262C3206C3D1600B98C08 /* Main.storyboard in Resources */,
 			);
